@@ -32,7 +32,7 @@ def process_tasks():
             # try workers
             for worker, load in sorted_workers:
                 try:
-                    print(f"🚀 Assigning Task {task} to {worker}")
+                    print(f"Assigning Task {task} to {worker}")
 
                     requests.post(
                         f"{worker}/execute",
@@ -42,7 +42,7 @@ def process_tasks():
                     break
 
                 except:
-                    print(f"❌ Worker {worker} failed, retrying...")
+                    print(f"Worker {worker} failed, retrying...")
 
         time.sleep(1)
 
