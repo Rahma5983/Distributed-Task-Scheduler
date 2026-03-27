@@ -28,16 +28,16 @@ def execute_task(task: dict):
 
     # Simulate random failure (30% chance)
     if random.random() < 0.3:
-        print(f"❌ Task {task['id']} failed due to simulated error")
+        print(f"Task {task['id']} failed due to simulated error")
         raise Exception("Simulated worker failure")
 
     # Safely increase load
     with lock:
         current_load += 1
-        print(f"⚙️ Current Load Increased: {current_load}")
+        print(f"Current Load Increased: {current_load}")
 
     try:
-        print(f"📥 Received Task: {task}")
+        print(f"Received Task: {task}")
 
         # Simulate processing time
         time.sleep(2)
