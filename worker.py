@@ -44,7 +44,7 @@ def execute_task(task: dict):
 
         result = f"Task {task['id']} completed successfully"
 
-        print(f"✅ Completed Task: {task}")
+        print(f"Completed Task: {task}")
 
         return {
             "status": "done",
@@ -55,4 +55,4 @@ def execute_task(task: dict):
         # Ensure load decreases even if something goes wrong
         with lock:
             current_load -= 1
-            print(f"⬇️ Current Load Decreased: {current_load}")
+            print(f"Current Load Decreased: {current_load}")
