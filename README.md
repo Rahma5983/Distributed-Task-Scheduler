@@ -66,6 +66,14 @@ python client.py
 
 ---
 
+## 🔬 Learning Outcome
+This project helped in understanding:
+- Distributed system design
+- Load balancing strategies
+- Fault tolerance mechanisms
+
+---
+
 ## 👩‍💻 Author
 
 Rahma Naqui
